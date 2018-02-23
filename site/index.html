@@ -3,7 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Big Fancy Ben</title>
     <meta name="description" content="BigFancyBen.com">
     <meta name="author" content="BigFancyBen">
@@ -14,14 +15,15 @@
   </head>
 
   <body>
+    <canvas id="canvas" data-tilt data-tilt-max="5" data-tilt-speed="200" data-tilt-axis="X" data-tilt-reset="false"></canvas>
     <div class="logo">
       <div class="cube">
-        <div class="logo-text">
+        <div class="logo-text" id="logo">
           <div class="small-name">
           Big Fancy
           </div>
           <div class="big-name">
-          BEN
+          Ben
           </div>
         </div>
         <div class="rectangle left">
@@ -62,5 +64,27 @@
         </div>
       </div>
     </div>
+
+
+    <nav role="navigation">
+      <div class = "nav-items">
+        <li>
+          <ul>
+            <a href="#">Resume</a>
+          </ul>
+          <ul>
+            <a href="#">Projects</a>
+          </ul>
+          <ul>
+            <a href="https://github.com/BigFancyBen" target="_blank">GitHub</a>
+          </ul>
+          <ul>
+            <a href="https://www.linkedin.com/in/ben-adams-swe/">LinkedIn</a>
+          </ul>
+        </li>
+      </div>
+    </nav>
+    <script src="./js/vanilla-tilt.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

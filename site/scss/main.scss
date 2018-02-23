@@ -1,0 +1,135 @@
+.rectangle {
+  min-width: 500px;
+  height: 200px;
+  position: relative;
+  left: -80px;
+  bottom: -30px;
+  background-color: rgb(64, 56, 57);
+}
+
+.left {
+  transform: rotateY(-90deg)  translate3d(-232px, 200px, -252.5px);
+  border-right: 6px rgba(0, 0, 0, .5) solid;
+}
+
+.front {
+  transform: translateZ(20px);
+  border-right: 3px rgba(0, 0, 0, .5) solid;
+}
+
+.rectangle2 {
+  width: 100%;
+  height: 20px;
+  background: #282828;
+  box-shadow: inset 0px -10px 10px 0px rgba(0,0,0,0.7);
+}
+
+.windows {
+  width: 50px;
+  height: 8px;
+  background: #828080;
+  margin-top: 30px;
+  display: inline-block;
+  margin-left: 40px;
+}
+.window-bottom {
+  width: 88%;
+  height: 30px;
+  background: #828080;
+  margin: 0 auto;
+}
+
+.logo{
+  position: fixed;
+  bottom: -80px;
+  left: -20px;
+  font-family: 'Anton', sans-serif;
+  perspective: 1000px;
+  pointer-events: none;
+}
+.logo-text {
+  margin-bottom: -110px;
+  margin-left: 110px;
+  color: #fce3db;
+  -webkit-text-stroke: 4px #4d5587;
+  transform: translate3d(-225px, 0, -250px);
+  text-shadow: 0 0 5px black;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.logo-animate {
+//   -webkit-text-stroke: 1px #f4754a;
+//   color: #fce3db;
+//   text-shadow: 0 0 5px #f4754a, 0 0 10px #f4754a, 0 0 20px #f48a66, 0 0 30px #f48a66;
+  opacity: 1;
+}
+
+.small-name {
+  font-size: 95px;
+  letter-spacing: -4px;
+  margin-bottom: -110px;
+  padding-left: 8px;
+}
+
+.big-name {
+  font-size: 250px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  transform: scale(1, .7);
+}
+
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateX(40deg) rotateY(-32deg);
+}
+
+body {
+  background-color: #00083d;
+}
+
+li {
+  list-style: none;
+}
+.nav-items {
+  position: fixed;
+  right: 10px;
+  text-align: right;
+  top: 0;
+}
+ul {
+  display: inline;
+  padding-left: 10px;
+}
+
+a {
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #fce3db;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  margin: 0;
+  text-decoration: none;
+  text-shadow: 0 0 5px black;
+  transition: all .5s;
+
+  -webkit-text-stroke: .2px #4d5587;
+}
+
+a:hover {
+  transform: scale(1.1, 1.1) translateX(-4px);
+  -webkit-text-stroke: .5px #f4754a;
+  text-shadow: 0 0 3px #f4754a, 0 0 10px #f4754a, 0 0 20px #f48a66, 0 0 30px #f48a66;
+  transition: all .5s;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+canvas {
+    position:absolute;
+}
