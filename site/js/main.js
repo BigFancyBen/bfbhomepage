@@ -19,7 +19,7 @@ window.onload = function() {
 function drawStars() {
   var context = canvas.getContext('2d');
 
-  createSpace(context, 300);
+  createSpace(context, 600);
 }
 
 function random (min, max) {
@@ -51,4 +51,14 @@ function createSpace (context, star_number) {
     context.closePath();
   }
   context.restore();
+}
+
+
+function showProjects() {
+    var projects = document.getElementById("projects");
+    if (projects.style.display === "none") {
+        projects.style.display = "block";
+    } else {
+        projects.style.display = "none";
+    }
 }

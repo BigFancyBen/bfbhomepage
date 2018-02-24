@@ -65,6 +65,18 @@
       </div>
     </div>
 
+    <div class="projects" id="projects" style="display: none">
+      <div class="project" onclick="window.open('https://github.com/BigFancyBen/dotastalk/releases','mywindow');">
+          <div class="project-img" id="dotastalk"></div>
+          <h3>DotaStalk</h3>
+          <p>A utility used by Dota players to gather information about the players in a match. Built using Electron and Handlebars.</p>
+      </div>
+      <div class="project" onclick="window.open('http://bigfancyben.com/dotabingo/?match_id=3743076538&player_id=&player_name=big%20fancy%20ben','mywindow');">
+          <div class="project-img" id="dotabingo"></div>
+          <h3>Dota Bingo</h3>
+          <p>This fun project leverages an api to check for amusing or impressive events in a given Dota match. Built with vanilla js.</p>
+      </div>
+    </div>
 
     <nav role="navigation">
       <div class = "nav-items">
@@ -73,7 +85,7 @@
             <a href="#">Resume</a>
           </ul>
           <ul>
-            <a href="#">Projects</a>
+            <a href="#" onclick="showProjects()">Projects</a>
           </ul>
           <ul>
             <a href="https://github.com/BigFancyBen" target="_blank">GitHub</a>
@@ -84,7 +96,8 @@
         </li>
       </div>
     </nav>
-    <script src="./js/vanilla-tilt.min.js"></script>
-    <script src="./js/main.js"></script>
+    <!-- <script src="./js/vanilla-tilt.min.js"></script>
+    <script src="./js/main.js"></script> -->
+    <script src="./dist/js/scripts.js"></script> -->
   </body>
 </html>
