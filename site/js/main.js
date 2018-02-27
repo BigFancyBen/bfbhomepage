@@ -1,9 +1,9 @@
-logo = document.getElementById("logo");
+let logo = document.getElementById("logo");
 let STAR_COLORS = ["#ffffff", "#ffe9c4", "#d4fbff"];
 
 let canvas = document.getElementById('canvas');
-canvas.width = 1.2 * document.body.clientWidth;
-canvas.height = 1.2 * document.body.clientHeight;
+canvas.width = document.body.clientWidth;
+canvas.height = document.body.clientHeight;
 let WIDTH = canvas.width;
 let HEIGHT = canvas.height;
 
@@ -61,4 +61,14 @@ function showProjects() {
     } else {
         projects.style.display = "none";
     }
+}
+
+function resizeCanvas(){
+  canvas = document.getElementById('canvas');
+  canvas.width = document.body.clientWidth;
+  canvas.height = document.body.clientHeight;
+  WIDTH = canvas.width;
+  HEIGHT = canvas.height;
+
+  drawStars();
 }

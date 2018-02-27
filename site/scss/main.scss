@@ -47,6 +47,7 @@
   perspective: 1000px;
   pointer-events: none;
   position: fixed;
+  z-index: 2;
 }
 
 .logo-text {
@@ -79,17 +80,36 @@
 
 body {
   background-color: #00083d;
+  overflow: hidden;
 }
 
 li {
+  display: flex;
+  font-size: 30px;
+  justify-content: space-between;
   list-style: none;
+  padding-left: 2.5%;
+  top: 10px;
+  width: 95%;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-size: 13px;
+  }
 }
 
 .nav-items {
-  position: fixed;
-  right: 10px;
-  text-align: right;
-  top: 0;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    right: 10px;
+    text-align: right;
+    top: 0;
+    width: inherit;
+  }
 }
 
 ul {
@@ -120,6 +140,7 @@ body, html {
 
 canvas {
   position: absolute;
+  z-index: 1;
 }
 
 .projects {
@@ -128,11 +149,13 @@ canvas {
   font-weight: 100;
   position: fixed;
   right: 10px;
-  top: 30px;
+  top: 40px;
   transition: opacity .5s;
+  z-index: 3;
 
   .project {
     background-color: #403839;
+    border: 1px solid #fce3db;
     cursor: pointer;
     height: 220px;
     margin-bottom: 10px;
